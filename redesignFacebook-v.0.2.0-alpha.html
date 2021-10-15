@@ -1,0 +1,155 @@
+<!--redesign da página de cadastro/login do facebook | autor: vinicius guedes | início em: 08/10/2021-->
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="fab fa-facebook" href="https://kit.fontawesome.com/ec2aa0fff3.js">
+		<script src="https://kit.fontawesome.com/ec2aa0fff3.js" crossorigin="anonymous"></script>
+		<title> Facebook | Entre ou Cadastre-se</title>
+		<style type="text/css">
+		
+
+		
+			*{
+				margin: 0;}
+
+			body{
+				background-color: #dfe3ee;}
+
+			#cabecalho{
+				text-decoration: none;	
+				background-color: #3b5998;
+				color: white;
+				height: 55px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				margin-bottom: 50px;
+				text-align: center;}
+
+			#cabecalho a{
+				text-decoration: none;	
+				color: white;}
+
+			#cabecalho a:hover{
+				color: lightblue;}
+
+			#maior{
+				background-color: #f7f7f7;
+				width: 96,2%%;
+				height: 392px;
+				margin: 20px;
+				display: flex;
+				flex-direction: rows;}
+
+			#esquerda{
+				text-align: center
+				width: 50%;
+				height: 30px;
+				margin: 5px;}
+
+			#direita{
+				text-align: center;
+				width: 50%;
+				height: 30px;
+				margin: 5px;}
+
+			#botaoCadastrar{}
+
+			#botaoCadastrar a{
+				padding: 10px;
+				background-color: green;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				text-decoration: none;
+				border-radius:5px;}
+
+			#botaoCadastrar a:hover{
+				background-color: lightgreen;
+				color: white;}
+				
+			#ladingPage{
+				background-color: #f7f7f7;
+				padding: 20px;}
+		</style>
+
+	</head>
+
+	<body>
+	
+			<!-- paleta 
+		#3b5998 	(59,89,152)
+		#8b9dc3 	(139,157,195)
+		#dfe3ee 	(223,227,238)
+		#f7f7f7 	(247,247,247)
+		#ffffff 	(255,255,255)
+		-->
+		<!-- botão do zap -->
+		<a href="https://api.whatsapp.com/send?phone=5511954673215&text=Texto%20aqui"
+			target="_blank"
+			style="position:fixed;bottom:20px;right:30px;">
+			<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+		</a>
+		<!-- fim do botão do zap -->
+
+		<!-- inicio do cabecalho -->
+		<div id="cabecalho">
+			<h1><a href="https://www.facebook.com"><i class="fab fa-facebook"></i>  Facebook</a></h1>
+			<p><i>Rápido, fácil.</i></p>
+		</div>
+		<!-- fim do cabecalho -->
+
+		<!-- video original 560 x 315 -->
+		<div id="maior">
+			<div id="esquerda">
+				<iframe width="672" height="378" src="https://www.youtube.com/embed/w_SRlOWVtvE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>		
+			<!--inicio do fomrulario INCOMPLETO-->			
+			<div id="direita">
+				<form action="" method="POST"> <!-- depois linkar com banco de dados-->
+					<br><p><h2> Crie uma nova conta </h2></p><br>
+					<p>Nome: <input type="text" name="nome"> Sobrenome: <input type="text" name="sobrenome"></p><br>
+					<p>Celular ou email: <input type="text" name="celEmail"></p><br>
+					<p>Senha: <input type="password" name="senha"> Confirme sua senha: <input type="password" name="senhaConf"></p><br>
+					<p>Data de Nascimento: <input type="text" name="dataNasc"></p><br>
+					<p>Gênero: Feminino <input type="radio" id="generoFem" name="genero"> | Masculino <input type="radio" id="generoMasc" name="genero"> | Personalizado <input type="radio" id="generoOutro" name="genero"></p><br>
+				</form><br>
+				<div id="botaoCadastrar">
+					<a href=https://www.facebook.com>Cadastre-se <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- fim do fromulario-->
+		</div><br><br>
+
+		<div id="ladingPage">
+			<p><h2>O que é o Facebook</h2><p><br>
+			<p><h3>História</h3><br>
+			<p>		O início do Facebook se deu em 2003, quando Mark Zuckerberg, Dustin Moskovitz e Chris Hughes, estudantes na Universidade de Harvard, desenvolveram uma rede social exclusiva para o campus. Em 2004, Zuckerberg criou o thefacebook.com, que se tornou o Facebook no ano seguinte.</p><br>
+			<p>		Hoje, o Facebook é a maior rede social do mundo, com mais de 2 bilhões de usuários ativos. Na plataforma, os usuários podem criar um perfil ou uma fan page, interagindo entre si através de "likes", mensagens e compartilhamentos de imagens e textos. </p><br>
+			<p>		De acordo com Mark Zuckerberg, o objetivo da rede social é conectar pessoas, criando um mundo mais transparente. Entre os valores da companhia estão a liberdade de compartilhamento de informações e de conexão, respeito à privacidade dos usuários, liberdade e fluxo livre de informações, igualdade de fundamentos, responsabilidade e transparência.</p><br>
+			<p><h3>Aquisições recentes</h3><p><br>
+			<p>O Facebook oferece outros produtos e serviços além de sua plataforma de rede social, incluindo Facebook Messenger, Facebook Watch e Facebook Portal. Também adquiriu Instagram, WhatsApp, Oculus VR, Giphy e Mapillary, e tem 9,9% de participação na Jio Platforms.</p><br>
+			<p>Em maio de 2019, Facebook funda a Libra Networks, supostamente, a fim de desenvolver sua própria criptomoeda. Em desenvolvimentos recentes, foi relatado que Libra está sendo apoiado por empresas como Visa, Mastercard, PayPal e Uber. Além da criptomoeda, também está em desenvolvimento uma carteira de criptomoedas (inicialmente denominada "Calibra", mudou o nome para "Novi") e uma rede de criptomoedas.</p><br>
+			<p>Em dezembro de 2020, o Facebook mudou o nome de sua criptomoeda de "Libra" para Diem.</p><br>
+			<p>Que o Facebook está presente 24/7 nas vidas online de muita gente, ninguém duvida, mas os dados levantados pela App Annie, uma empresa especializada em análise de dados para aplicativos móveis pegou todo mundo de jeito: a companhia de Mark Zuckerberg é dona dos quatro aplicativos mobile mais baixados em dispositivos da década, sendo eles o Messenger, o WhatsApp, o Instagram e o próprio Facebook.</p><br>
+			<p>A pesquisa leva em conta downloads realizados no iOS e Android, de 2010 a 2019 (os dados combinados foram contabilizados a partir de janeiro de 2012; antes, só contam downloads em iPhones e iPads) e mostra como o Facebook dominou o cenário mobile, oferecendo os aplicativos mais procurados pelos usuários.</p><br>
+			<p>Ainda que o Instagram e o WhatsApp tenham sido adquiridos respectivamente em 2012 e 2014, a adoção pelos consumidores prova que o dinheiro, que não foi pouco, foi bem investido, mesmo que o último ainda não veicule anúncios (existem planos para inclui-los nos Status).</p><br>
+			<p>A lista dos 10 apps mobile mais baixados da década é a seguinte:</p><br>	
+			<!-- começando uma lista -->
+			<ul>
+				<li>1. Facebook;</li>
+				<li>2. Facebook Messenger;</li>
+				<li>3. WhatsApp;</li>
+				<li>4. Instagram</li>
+				<li>5. Snapchat;</li>
+				<li>6. Skype;</li>
+				<li>7. TikTok;</li>
+				<li>8. UC Browser;</li>
+				<li>9. YouTube;</li>
+				<li>10.  Twitter.</li>
+			</ul>
+		</div>
+
+	</body>
+
+</html>
