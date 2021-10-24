@@ -1,0 +1,252 @@
+<!--redesign da página de cadastro/login do facebook | autor: vinicius guedes | início em: 08/10/2021-->
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="fab fa-facebook" href="https://kit.fontawesome.com/ec2aa0fff3.js">
+		<script src="https://kit.fontawesome.com/ec2aa0fff3.js" crossorigin="anonymous"></script>
+		<title> Facebook | Entre ou Cadastre-se</title>
+		<style type="text/css">
+			*{
+				margin: 0;}
+
+			body{
+				background-color: #dfe3ee;}
+
+			#cabecalho{
+				text-decoration: none;			
+				background-color: #3b5998;
+				color: white;
+				height: 55px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				margin-bottom: 50px;
+				text-align: left;}
+
+			#cabecalho a{
+				text-decoration: none;	
+				color: white;}
+
+			#cabecalho a:hover{
+				color: lightblue;}
+
+			#maior{
+				background-color: #f7f7f7;
+				width: 96,2%%;
+				height: 392px;
+				margin: 20px;
+				display: flex;
+				flex-direction: rows;}
+
+			#esquerda{
+				text-align: center
+				width: 50%;
+				height: 30px;
+				margin: 5px;}
+
+			#direita{
+				text-align: center;
+				width: 50%;
+				height: 30px;
+				margin: 5px;}
+
+			#botaoCadastrar{}
+
+			#botaoCadastrar a{
+				padding: 10px;
+				background-color: green;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				text-decoration: none;
+				border-radius:5px;}
+
+			#botaoCadastrar a:hover{
+				background-color: lightgreen;
+				color: white;}
+				
+			#ladingPage{
+				background-color: #f7f7f7;
+				background-image: url(_images/foot.png);
+				background-position: right bottom; /* Center the image */
+				background-repeat: no-repeat; /* Do not repeat the image */
+				padding: 20px;}
+
+		</style>
+	</head>
+	<body>
+	
+		<!-- paleta de cores
+		#3b5998 	(59,89,152)
+		#8b9dc3 	(139,157,195)
+		#dfe3ee 	(223,227,238)
+		#f7f7f7 	(247,247,247)
+		#ffffff 	(255,255,255)
+		-->
+		<!-- botão do zap -->
+		<a href="https://api.whatsapp.com/send?phone=5511954673215&text=Olá,%20Vinicius.%20Vi%20seu%20redesign%20da%20página%20de%20cadastro%20do%20Facebook%20e%20consegui%20seu%20whatsapp%20por%20lá."
+			target="_blank"
+			style="position:fixed;bottom:20px;right:30px;">
+			<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+		</a>
+		<!-- fim do botão do zap -->
+
+		<!-- inicio do cabecalho -->
+		<div id="cabecalho">
+			<h1><a href="https://www.facebook.com"><i class="fab fa-facebook"></i>  Facebook</a></h1>
+			<p><i>Rápido, fácil.</i></p>
+		</div>
+		<!-- fim do cabecalho -->
+
+		<!-- video original 560 x 315 -->
+		<div id="maior">
+			<div id="esquerda">
+				<iframe width="672" height="378" src="https://www.youtube.com/embed/w_SRlOWVtvE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>		
+			<!--inicio do fomrulario INCOMPLETO-->			
+			<div id="direita">
+				<form action="" method="POST"> <!-- depois linkar com banco de dados-->
+					<br><p><h2> Crie uma nova conta </h2></p><br>
+					<p>Nome: <input type="text" name="nome"> Sobrenome: <input type="text" name="sobrenome"></p><br>
+					<p>Celular ou email: <input type="text" name="celEmail"></p><br>
+					<p>Senha: <input type="password" name="senha"> Confirme sua senha: <input type="password" name="senhaConf"></p><br>
+					<p>Data de Nascimento: </p><input type="text" name="dataNascDia" list="NascDia" value="Dia">
+					<datalist id="NascDia">
+						<option value="1"></option>
+						<option value="2"></option>
+						<option value="3"></option>
+						<option value="4"></option>
+						<option value="5"></option>
+						<option value="6"></option>
+						<option value="7"></option>
+						<option value="8"></option>
+						<option value="9"></option>
+						<option value="10"></option>
+						<option value="11"></option>
+						<option value="12"></option>
+						<option value="13"></option>
+						<option value="14"></option>
+						<option value="15"></option>
+						<option value="16"></option>
+						<option value="17"></option>
+						<option value="18"></option>
+						<option value="19"></option>
+						<option value="20"></option>
+						<option value="21"></option>
+						<option value="22"></option>
+						<option value="23"></option>
+						<option value="24"></option>
+						<option value="25"></option>
+						<option value="26"></option>
+						<option value="27"></option>
+						<option value="28"></option>
+						<option value="29"></option>
+						<option value="30"></option>
+						<option value="31"></option>
+					</datalist>				
+					<input type="text" name="dataNascMes" list="NascMes" value="Mês">
+					<datalist id="NascMes">
+						<option value="Jan"></option>
+						<option value="Fev"></option>
+						<option value="Mar"></option>
+						<option value="Abr"></option>
+						<option value="Mai"></option>
+						<option value="Jun"></option>
+						<option value="Jul"></option>
+						<option value="Ago"></option>
+						<option value="Set"></option>
+						<option value="Out"></option>
+						<option value="Nov"></option>
+						<option value="Dez"></option>
+					</datalist>		
+					<input type="text" name="dataNascAno" list="NascAno" value="Ano">
+					<datalist id="NascAno">
+						<option value="2021"></option>
+						<option value="2020"></option>
+						<option value="2019"></option>
+						<option value="2018"></option>
+						<option value="2017"></option>
+						<option value="2016"></option>
+						<option value="2015"></option>
+						<option value="2014"></option>
+						<option value="2013"></option>
+						<option value="2012"></option>
+						<option value="2011"></option>
+						<option value="2010"></option>
+						<option value="2009"></option>
+						<option value="2008"></option>
+						<option value="2007"></option>
+						<option value="2006"></option>
+						<option value="2005"></option>
+						<option value="2004"></option>
+						<option value="2003"></option>
+						<option value="2002"></option>
+						<option value="2001"></option>
+						<option value="2000"></option>
+						<option value="1999"></option>
+						<option value="1998"></option>
+						<option value="1997"></option>
+						<option value="1996"></option>
+						<option value="1995"></option>
+						<option value="1994"></option>
+						<option value="1993"></option>
+						<option value="1992"></option>
+						<option value="1991"></option>
+						<option value="1990"></option>
+						<option value="1989"></option>
+						<option value="1988"></option>
+						<option value="1987"></option>
+						<option value="1986"></option>
+						<option value="1985"></option>
+						<option value="1984"></option>
+						<option value="1983"></option>
+						<option value="1982"></option>
+						<option value="1981"></option>
+						<option value="1980"></option>
+						<option value="1979"></option>
+						<option value="1978"></option>
+						<option value="1977"></option>
+						<option value="1976"></option>
+						<option value="1975"></option>
+						<option value="1974"></option>
+					</datalist>	
+					</p><br>
+					<p>Gênero: </p>
+					Feminino <input type="radio" id="generoFem" name="genero"> | Masculino <input type="radio" id="generoMasc" name="genero"> | Personalizado <input type="radio" id="generoOutro" name="genero"></p><br>
+				</form><br>
+				<div id="botaoCadastrar">
+					<a href="https://www.facebook.com">Cadastre-se <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- fim do fromulario-->
+		</div><br><br>
+		<div id="ladingPage">
+			<p><h2>O que é o Facebook</h2><p><br>
+			<p><h3>História</h3><br>
+			<p>		O início do Facebook se deu em 2003, quando Mark Zuckerberg, Dustin Moskovitz e Chris Hughes, estudantes na Universidade de Harvard, desenvolveram uma rede social exclusiva para o campus. Em 2004, Zuckerberg criou o thefacebook.com, que se tornou o Facebook no ano seguinte.</p><br>
+			<p>		Hoje, o Facebook é a maior rede social do mundo, com mais de 2 bilhões de usuários ativos. Na plataforma, os usuários podem criar um perfil ou uma fan page, interagindo entre si através de "likes", mensagens e compartilhamentos de imagens e textos. </p><br>
+			<p>		De acordo com Mark Zuckerberg, o objetivo da rede social é conectar pessoas, criando um mundo mais transparente. Entre os valores da companhia estão a liberdade de compartilhamento de informações e de conexão, respeito à privacidade dos usuários, liberdade e fluxo livre de informações, igualdade de fundamentos, responsabilidade e transparência.</p><br>
+
+
+			<!-- começando uma lista -->
+			<ul>
+								<li>1. Facebook;</li>
+				<li>2. Facebook Messenger;</li>
+				<li>3. WhatsApp;</li>
+				<li>4. Instagram</li>
+				<li>5. Snapchat;</li>
+				<li>6. Skype;</li>
+				<li>7. TikTok;</li>
+				<li>8. UC Browser;</li>
+				<li>9. YouTube;</li>
+				<li>10.  Twitter.</li>
+				<li>1. Facebook;</li>
+				<li>2. Facebook Messenger;</li>
+				<li>3. WhatsApp;</li>
+				<li>4. Instagram</li>
+			</ul>
+			<br>
+		<p>Imagem por: <a href='https://br.freepik.com/vetores/pessoas'>pch.vector - br.freepik.com</a></p>
+		</div>
+	</body>
+</html>
