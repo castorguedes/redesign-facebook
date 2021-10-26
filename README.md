@@ -10,4 +10,5 @@ Meus objetivos com esse projeto são, além de praticar linguagem de marcação 
 ![image](https://user-images.githubusercontent.com/51998057/138973840-02562577-0192-42f4-bafe-d5a6ab24089b.png)
 
 <h3>O protótipo inicial (v.0.1.0-alpha): </h3>
+
 ![image](https://user-images.githubusercontent.com/51998057/138974177-5b675bd5-c198-460a-bcc1-25c32eed109f.png)
